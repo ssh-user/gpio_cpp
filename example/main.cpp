@@ -1,8 +1,9 @@
+// example of usage gpio libs.
 // REMEMBER. Interrupts don't work at PC* & PD* pins. Look pins at picture GPIO.png
 
 #include "gpio.h"
 
-
+// wait an interaption on pin 14.
 int main() {
 
     Gpio sensor(14);
@@ -15,7 +16,7 @@ int main() {
 
 
 /*
- * // рабочий пример ШИМа.
+ * // work example of PWM.
 
     bool loop = true;
     int hz = 100;
